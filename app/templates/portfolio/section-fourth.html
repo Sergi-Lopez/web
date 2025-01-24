@@ -1,0 +1,18 @@
+<div id='contacto' class='center padded coal section'>
+    <div class='content'>
+        <div class='row vert-pad'>
+            <div class='left padded card'>
+                <h1>Contáctame</h1>
+                <p>Si te ha convencido o llamado la atención algo de lo mostrado en este portfolio, ponte en contacto conmigo a través de este formulario.</p>
+            </div>
+            <div class='right padded'>
+                <form class='contact-form' method='post' action='{{ url_for('portfolio.mail') }}'>
+                    <input name='name' placeholder='Nombre' required />
+                    <input name='email' placeholder='Correo' required type='email'/>
+                    <textarea placeholder='Mensaje' name='message' required minlength=10></textarea>
+                    <button class='btn full-width'>Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
