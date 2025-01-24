@@ -295,3 +295,108 @@ a.scroll-to:hover {
     text-decoration: none;
     transition: text-decoration 0.3s ease-in-out;
 }
+
+/* General responsive adjustments */
+@media (max-width: 768px) {
+    /* Hero Section */
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero .hero-content {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .left, .right {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .right img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* General content adjustments */
+    .content {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    /* Header */
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    header nav ul li {
+        margin: 5px 0;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 20px 10px;
+    }
+
+    /* Contact form */
+    .contact-form input, 
+    .contact-form textarea {
+        width: 100%;
+    }
+
+    /* Proyectos section */
+    .third {
+        width: 100%;
+    }
+
+    /* Lists */
+    ul {
+        padding: 0;
+    }
+
+    li {
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+    }
+
+    .right img {
+        max-width: 250px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .padded {
+        padding: 10px;
+    }
+}
